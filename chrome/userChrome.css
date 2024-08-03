@@ -1,0 +1,21 @@
+:root {
+	--skyligth-blue: #3636e1;
+
+	/* firefox vars rewrite */
+	--tab-min-height: 27px !important;
+	--tab-max-height: 27px !important;
+	--toolbarbutton-border-radius: 15px !important;
+	--tab-border-radius: 15px !important;
+}
+
+tab:not([selected]):hover .tab-background,
+tab[selected]:hover .tab-background {
+    background-color: #3636e1c0!important;
+}
+
+tab:not([selected]) .tab-background {
+    background-color: transparent !important;
+}
+tab[selected] .tab-background {
+    background-color: var(--skyligth-blue) !important;
+}

@@ -1,0 +1,80 @@
+:root {
+    --skyligth-blue: #3636e1;
+    --default-border: 15px;
+
+    /* firefox vars rewrite */
+    --newtab-element-hover-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+@-moz-document url("about:newtab"), url("about:home") {
+    *:not(.icon-wrapper, #root) {
+        border-radius: var(--default-border) !important;
+    }
+
+    #root {
+        /*background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstore-images.s-microsoft.com%2Fimage%2Fapps.60323.14294656681058683.4d17bdd8-7026-429a-846f-cf7836bc9e56.a69e6905-8926-4a48-b243-14a039b97aae%3Fmode%3Dscale%26q%3D90%26h%3D1080%26w%3D1920%26format%3Djpg&f=1&nofb=1&ipt=da3465dca1c652285fa9029680f19eaab167ec737b32962540186e733ed8c4fa&ipo=images) no-repeat fixed center center !important;
+        background-size: cover !important;*/
+        background-color: #18181b;
+    }
+
+    .top-sites {
+        background: rgba(255, 255, 255, 0.04) !important;
+        filter: blur(0 0 10px black) !important;
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+    }
+
+    .search-handoff-button {
+        color: white !important;
+        background: rgba(255, 255, 255, 0.04) !important;
+        border-color: transparent !important;
+        border-radius: var(--default-border) !important;
+        outline: none !important;
+        filter: blur(0 0 10px black) !important;
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+    }
+    .search-handoff-button:hover {
+        background: rgba(255, 255, 255, 0.07) !important;
+        border-color: var(--skyligth-blue) !important;
+    }
+
+    .top-site-button {
+        border: 1px solid transparent !important;
+    }
+
+    .top-site-button:hover {
+        border: 1px solid var(--skyligth-blue) !important;
+        background-color: transparent !important;
+        transform: rotateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7) !important;
+    }
+
+    .tile {
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .title {
+        padding-top: 0 !important;
+    }
+    .title span {
+        padding-bottom: 2px;
+    }
+    
+    .icon-wrapper {
+        filter: drop-shadow(0 0 8px black);
+    }
+
+    .top-site-icon {
+        background-color: transparent !important;
+    }
+
+    .top-site-inner > a {
+        padding: 5px 16px !important;
+    }
+
+    .collapsible-section {
+        padding: 5px 25px !important;
+    }
+}
