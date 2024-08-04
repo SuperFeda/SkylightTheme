@@ -1,5 +1,6 @@
 :root {
     --skyligth-blue: #3636e1;
+    --bg-color: #18181b;
     --default-border: 15px;
 
     /* firefox vars rewrite */
@@ -14,7 +15,7 @@
     #root {
         /*background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstore-images.s-microsoft.com%2Fimage%2Fapps.60323.14294656681058683.4d17bdd8-7026-429a-846f-cf7836bc9e56.a69e6905-8926-4a48-b243-14a039b97aae%3Fmode%3Dscale%26q%3D90%26h%3D1080%26w%3D1920%26format%3Djpg&f=1&nofb=1&ipt=da3465dca1c652285fa9029680f19eaab167ec737b32962540186e733ed8c4fa&ipo=images) no-repeat fixed center center !important;
         background-size: cover !important;*/
-        background-color: #18181b;
+        background-color: var(--bg-color);
     }
 
     .top-sites {

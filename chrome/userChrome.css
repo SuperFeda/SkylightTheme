@@ -1,5 +1,6 @@
 :root {
 	--skyligth-blue: #3636e1;
+	--bg-color: #18181b;
 
 	/* firefox vars rewrite */
 	--tab-min-height: 27px !important;
@@ -10,12 +11,73 @@
 
 tab:not([selected]):hover .tab-background,
 tab[selected]:hover .tab-background {
-    background-color: #3636e1c0!important;
+    background-color: #3636e1c0 !important;
 }
 
 tab:not([selected]) .tab-background {
-    background-color: transparent !important;
+    background-color: rgba(255, 255, 255, 0.03) !important;
 }
 tab[selected] .tab-background {
     background-color: var(--skyligth-blue) !important;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+
+.tabbrowser-tab .tab-close-button{
+    display: none !important;
+}
+.tabbrowser-tab:not([pinned]):hover .tab-close-button{
+    display: block !important;
+}
+
+:is(#TabsToolbar) .tab-close-button:hover {
+    background-color: rgba(255, 255, 255, 0.07) !important;
+    fill: red !important;
+}
+
+
+/*   background-color: rgba(255, 255, 255, 0.07) !important;   */
+#tabs-newtab-button, #TabsToolbar #new-tab-button {
+    fill: var(--skyligth-blue) !important;
+}
+
+#TabsToolbar {
+	background-color: var(--bg-color) !important;
+}
+
+
+
+#urlbar-background {
+    background-color: #3636e1c0 !important;
+	outline: none;
+}
+
+
+
+#personal-bookmarks {
+    padding-top: 2px;
+    padding-bottom: 2px;   
+    overflow: auto;
+}
+
+.bookmark-item .toolbarbutton-icon {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+#navigator-toolbox{
+    background: rgba(255, 255, 255, 0.02) !important;
+	/*margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 3px;
+	border-radius: 15px;*/
+}
+
+#nav-bar{
+    background: var(--bg-color) !important; 
+}
+
+#PersonalToolbar {
+	background-color: var(--bg-color) !important;
 }
